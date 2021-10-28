@@ -56,7 +56,7 @@ function userResponse() {
 
 //admin Respononse to user's message
 function adminResponse() {
-  console.log("admin");
+  
 
   fetch("https://api.adviceslip.com/advice")
     .then((response) => {
@@ -85,6 +85,7 @@ function adminResponse() {
     });
 }
 
+//press enter on keyboard and send message
 addEventListener("keypress", (e) => {
   if (e.keyCode === 13) {
     
