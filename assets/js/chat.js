@@ -23,11 +23,9 @@ function chatClose() {
 function openConversation() {
   document.getElementById("chat-window2").style.display = "block";
   document.getElementById("chat-window1").style.display = "none";
-  let audio2 = new Audio(
-    "http://windowssound.up.seesaa.net/xp/windows20xp20pop-up20blocked.wav"
-  );
-  audio2.load();
-  audio2.play();
+
+  audio1.load();
+  audio1.play();
 }
 
 //Gets the text from the input box(user)
