@@ -416,16 +416,22 @@ h1.title {
 @media screen and (max-width: 396px) {
   .chat-window {
     right: 14px;
+    bottom: 87px;
+  }
+  .hi-there {
+    padding: 12px 30px;
   }
   .chat-window2 {
     right: 14px;
+    bottom: 87px;
+    height: 415px;
   }
   .chat-bar-open {
-    bottom: 51px;
+    bottom: 20px;
     right: 21px;
   }
   .chat-bar-close {
-    bottom: 52px;
+    bottom: 21px;
     right: 25px;
   }
 }
