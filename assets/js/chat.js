@@ -5,7 +5,6 @@ function chatOpen() {
   document.getElementById("chat-open").style.display = "none";
   document.getElementById("chat-close").style.display = "block";
   document.getElementById("chat-window1").style.display = "block";
-  console.log("clicked open");
 
   audio1.load();
   audio1.play();
@@ -15,7 +14,6 @@ function chatClose() {
   document.getElementById("chat-close").style.display = "none";
   document.getElementById("chat-window1").style.display = "none";
   document.getElementById("chat-window2").style.display = "none";
-  console.log("clicked close");
 
   audio1.load();
   audio1.play();
@@ -89,7 +87,7 @@ function adminResponse() {
 
 addEventListener("keypress", (e) => {
   if (e.keyCode === 13) {
-    console.log("key pressed");
+    
     const e = document.getElementById("textInput");
     if (e === document.activeElement) {
       userResponse();
