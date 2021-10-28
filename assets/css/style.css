@@ -273,7 +273,7 @@ h1.title {
 .chat-window2 {
   display: none;
   width: 332px;
-  height: 432px;
+  height: 434px;
   border-radius: 10px;
   background-color: #fff;
   padding: 16px;
@@ -345,7 +345,7 @@ h1.title {
   width: 200px;
   float: left;
   background-color: #ecf1fb;
-  padding: 10px;
+  padding: 12px;
   margin: 0px 5px;
   border-radius: 10px;
   color: #000;
