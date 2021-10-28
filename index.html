@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="Tab icon"
+      href="assets/images/sparrow favicon.png"
+      type="image/png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <script src="assets/js/main.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/chat.css" />
+    <script src="assets/js/chat.js"></script>
+
+    <title>Maxeon</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <label class="logo">Maxeon</label>
+      <ul id="myDIV">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Use Cases</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#" class="login">Login</a></li>
+      </ul>
+
+      <label id="icon" onclick="myFunction()">
+        <i class="material-icons-outlined">menu</i>
+      </label>
+    </nav>
+
+    <!-- homepage title and banner-->
+    <section class="homepage">
+      <pre><h1 class="title">Where
+words
+fail,
+Music
+speaks.
+      </h1></pre>
+    </section>
+
+    <!-- Popup chat window -->
+
+    <!-- chat open -->
+    <div class="chat-bar-open" id="chat-open">
+      <button
+        id="chat-open-button"
+        type="button"
+        class="collapsible close"
+        onclick="chatOpen()"
+      >
+        <img src="assets/images/Sparrow Bird.png" alt="Sparrow Bird image" />
+      </button>
+    </div>
+
+    <!-- chat close -->
+    <div class="chat-bar-close" id="chat-close">
+      <button
+        id="chat-close-button"
+        type="button"
+        class="collapsible close"
+        onclick="chatClose()"
+      >
+        <i class="material-icons-outlined"> close </i>
+      </button>
+    </div>
+
+    <!-- chat-window 1 -->
+    <div class="chat-window" id="chat-window1">
+      <div class="hi-there">
+        <p class="p1">Hi There</p>
+        <br />
+        <p class="p2">Hello Ask Us Anythig,Share Your<br />Feedback.</p>
+      </div>
+      <div class="start-conversation">
+        <h1>Start a Conversation</h1>
+        <br />
+        <p>The team typically replies in few minutes.</p>
+        <button
+          class="new-conversation"
+          type="button"
+          onclick="openConversation()"
+        >
+          <span>New Conversation</span
+          ><i class="material-icons-outlined"> send </i>
+        </button>
+      </div>
+    </div>
+
+    <!-- chat chat-window 2 -->
+    <div class="chat-window2" id="chat-window2">
+      <div class="message-box" id="messageBox">
+        <div class="hi-there">
+          <p class="p1">Hi There</p>
+          <br />
+          <p class="p2">The team typically replies in few minutes.</p>
+        </div>
+        <div class="first-chat">
+          <p>Is there any offlines versions available for Maxeon Player?</p>
+          <div class="arrow"></div>
+        </div>
+        <div class="second-chat">
+          <div class="circle"></div>
+          <p>Currently we don't have but we will launch soon.</p>
+          <div class="arrow"></div>
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="surveysparrow">
+          <img src="assets/images/sparrow favicon.png" />
+          <p>we run on surveysparrow</p>
+        </div>
+        <div class="write-reply">
+          <input
+            class="inputText"
+            type="text"
+            id="textInput"
+            placeholder="Write a reply..."
+          />
+        </div>
+        <div class="send-button">
+          <button
+            type="submit"
+            class="send-message"
+            id="send"
+            onclick="userResponse()"
+          >
+            <i class="material-icons-outlined"> send </i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

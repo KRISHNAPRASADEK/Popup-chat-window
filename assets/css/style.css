@@ -1,0 +1,158 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: Montserrat;
+} */
+
+/* Navigation bar */
+nav {
+  background: transparent;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  margin-left: 5rem;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 60px;
+}
+nav li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 8px;
+}
+nav a {
+  color: white;
+  font-size: 17px;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+nav .login,
+nav a:hover {
+  border: 1px solid white;
+  border-radius: 18px;
+  font-size: 17px;
+  font-weight: bold;
+  background: white;
+  color: #0c003a;
+  padding: 8px 14px;
+  transition: 0.1s;
+}
+
+nav #icon {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* banner */
+.homepage {
+  margin-top: -80px;
+  background: url("/assets/images/Banner.png") no-repeat center;
+  background-size: cover;
+  height: 39rem;
+}
+/* title */
+
+h1.title {
+  font-family: Montserrat;
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  padding-left: 7rem;
+  padding-top: 8rem;
+  line-height: 1;
+}
+/* Responsive design nav and banner */
+@media (max-width: 1048px) {
+  label.logo {
+    font-size: 30px;
+    margin-left: 7.5rem;
+  }
+  nav ul {
+    margin-right: 18px;
+  }
+  nav a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 813px) {
+  nav #icon {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #9ba7b8;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0;
+  }
+  nav .login {
+    font-size: 25px;
+    padding: 7px 68px;
+  }
+  nav a:hover {
+    font-size: 25px;
+    border: none;
+    background: none;
+    padding: 0;
+    color: black;
+  }
+  nav ul.show {
+    left: 0;
+    top: 3.8rem;
+  }
+
+  h1.title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-left: 7%;
+    padding-top: 8rem;
+    line-height: 1;
+  }
+  .homepage {
+    height: 48rem;
+  }
+}
+@media (max-width: 345px) {
+  nav #icon {
+    margin-right: 3%;
+  }
+  label.logo {
+    padding-left: 3%;
+  }
+  label.logo {
+    padding: 0 5%;
+  }
+}

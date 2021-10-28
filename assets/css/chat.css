@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: Montserrat;
+  background: rgb(226, 220, 220);
+}
+/* chat open and close */
+.chat-bar-open {
+  text-align: center;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+}
+.chat-bar-close {
+  display: none;
+  text-align: center;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+}
+.chat-bar-open .close,
+.chat-bar-close .close {
+  background-color: #fff;
+  width: 70px;
+  cursor: pointer;
+  height: 70px;
+  padding: 15px;
+  border-radius: 50%;
+  border-style: none;
+  vertical-align: middle;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px, rgb(0 0 0 / 20%) 0px 2px 24px;
+}
+.chat-bar-close .close {
+  width: 56px;
+  height: 56px;
+  padding: 12px;
+}
+.chat-bar-open .close img {
+  height: 40px;
+}
+.chat-bar-close .close i {
+  font-size: 30px;
+}
+.chat-bar-open .close::after {
+  position: absolute;
+  content: "";
+  top: 43px;
+  left: 37px;
+  transform: rotate(-51deg);
+  border-left: 23px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #fff;
+}
+.chat-bar-close .close::after {
+  position: absolute;
+  content: "";
+  top: 27px;
+  left: 23px;
+  transform: rotate(-55deg);
+  border-left: 24px solid transparent;
+  border-right: 29px solid transparent;
+  border-top: 31px solid #fff;
+}
+
+/* chat window 1 */
+.chat-window {
+  width: 332px;
+  height: 280px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 16px;
+  z-index: 9999999;
+  position: fixed;
+  bottom: 120px;
+  right: 54px;
+  display: none;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px, rgb(0 0 0 / 20%) 0px 2px 24px;
+}
+.hi-there {
+  background-color: #7f8ac5;
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.hi-there .p1 {
+  font-size: 20px;
+}
+.hi-there .p2 {
+  font-size: 13px;
+}
+.chat-window .start-conversation {
+  padding: 15px 24px;
+}
+.chat-window .start-conversation h1 {
+  font-size: 15px;
+}
+.chat-window .start-conversation p {
+  font-size: 12px;
+}
+.chat-window .start-conversation button {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 30px;
+  margin: 10px 0px;
+  background-color: #13a884;
+  color: white;
+}
+.chat-window .start-conversation button span {
+  font-size: 14px;
+}
+.chat-window .start-conversation button i {
+  font-size: 16px;
+  position: relative;
+  left: 6px;
+  top: 3px;
+}
+
+/* chat window 2 */
+.chat-window2 {
+  display: none;
+  width: 332px;
+  height: 432px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 16px;
+  z-index: 9999999;
+  position: fixed;
+  bottom: 120px;
+  right: 54px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px, rgb(0 0 0 / 20%) 0px 2px 24px;
+}
+.chat-window2 .hi-there .p2 {
+  font-size: 12px;
+}
+.message-box {
+  height: 325px;
+  width: 100%;
+  padding-right: 5px;
+  overflow: auto;
+}
+.message-box .first-chat {
+  width: 200px;
+  float: right;
+  background-color: #4c5aa1;
+  padding: 10px;
+  margin: 14px 0px;
+  border-radius: 5px;
+  color: white;
+}
+.message-box .first-chat p {
+  font-size: 12px;
+  overflow-wrap: break-word;
+}
+.message-box .first-chat .arrow {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid #4c5aa1;
+  border-top: 9px solid #4c5aa1;
+  border-bottom: 9px solid transparent;
+  right: -172px;
+  bottom: -23px;
+  position: relative;
+  margin-top: -15px;
+}
+
+.message-box .second-chat {
+  display: inline-block;
+}
+
+.message-box .second-chat .circle {
+  background-color: #4c5aa1;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  float: left;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.message-box .second-chat #circle-mar {
+  margin-top: 5px;
+}
+
+.message-box .second-chat p {
+  font-size: 12px;
+  overflow-wrap: break-word;
+}
+.message-box .second-chat p {
+  width: 200px;
+  float: left;
+  background-color: #ecf1fb;
+  padding: 10px;
+  margin: 0px 5px;
+  border-radius: 10px;
+  color: #000;
+}
+.message-box .second-chat .arrow {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-right: 9.5px solid transparent;
+  border-left: 9.5px solid #ecf1fb;
+  border-top: 9.5px solid #ecf1fb;
+  border-bottom: 9.5px solid transparent;
+  margin-left: 40px;
+  margin-top: -2%;
+  display: inline-block;
+}
+
+.chat-window2 .input-box {
+  position: absolute;
+  font-size: 12px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0px 30px;
+  padding-bottom: 18px;
+  border-top: 1px solid lightgray;
+}
+.chat-window2 .input-box .write-reply {
+  float: left;
+}
+.chat-window2 .input-box .write-reply input[type="text"] {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.chat-window2 .input-box .send-button {
+  float: right;
+  border: none;
+  outline: none;
+}
+.chat-window2 .input-box .send-button button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.chat-window2 .input-box .send-button button i {
+  color: grey;
+  font-size: 20px;
+  font-weight: bold;
+}
+.chat-window2 .input-box .surveysparrow img {
+  width: 15px;
+  margin-bottom: -4px;
+}
+.chat-window2 .input-box .surveysparrow p {
+  display: inline;
+  font-size: 10px;
+  color: #636262;
+}
+.chat-window2 .input-box .surveysparrow {
+  position: relative;
+  bottom: 28px;
+  right: -65px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 396px) {
+  .chat-window {
+    right: 14px;
+  }
+  .chat-window2 {
+    right: 14px;
+  }
+  .chat-bar-open {
+    bottom: 51px;
+    right: 21px;
+  }
+  .chat-bar-close {
+    bottom: 52px;
+    right: 25px;
+  }
+}
