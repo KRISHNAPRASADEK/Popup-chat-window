@@ -1,4 +1,4 @@
-# Popup Chat window (chat bot) using html,css,js Maxeon 
+# Popup Chat window (chat bot) using html,css,js
 Website link : https://krishnaprasadek.github.io/Maxeon/
 
 
