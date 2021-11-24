@@ -1,5 +1,5 @@
 # Popup Chat window (chat bot) using html,css,js
-Website link : https://krishnaprasadek.github.io/Maxeon/
+Website link : https://krishnaprasadek.github.io/Popup-chat-window/
 
 
 A Complete Responsive homepage with a navigation bar and Chat Popup.
